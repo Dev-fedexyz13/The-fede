@@ -348,17 +348,17 @@ Array.prototype.getRandom = function() {
 global.dfail = (type, m, conn, usedPrefix, command) => {
     let user2 = m.pushName || 'Anónimo'
     const msg = {
-        rowner: `✦ El comando *${command}* solo puede ser usado por mi creador.`,
-        owner: `✦ El comando *${command}* solo puede ser usado por los desarrolladores del bot.`,
-        mods: `✦ El comando *${command}* solo puede ser usado por los moderadores del bot.`,
-        premium: `✦ El comando *${command}* solo puede ser usado por usuarios premium.`,
-        group: `✦ El comando *${command}* solo puede ser usado en grupos.`,
-        private: `✦ El comando *${command}* solo puede ser usado en mi chat privado.`,
-        admin: `✦ El comando *${command}* solo puede ser usado por los administradores del grupo.`,
-        botAdmin: `✦ Para ejecutar el comando *${command}*, debo ser administrador del grupo.`,
-        unreg: `✦ Aún no estás registrado/a.\nUsa: *${usedPrefix}reg ${user2}.18*`,
-        restrict: `✦ Esta característica está desactivada por el desarrollador.`
-    }[type]
+        rowner: `✦ 𝖤𝗅 𝖼𝗈𝗆𝖺𝗇𝖽𝗈 *${command}* 𝗌𝗈𝗅𝗈 𝗉𝗎𝖾𝖽𝖾 𝗌𝖾𝗋 𝖾𝗃𝖾𝖼𝗎𝗍𝖺𝖽𝗈 𝗉𝗈𝗋 𝗆𝗂 𝖼𝗋𝖾𝖺𝖽𝗈𝗋 𝖿𝗎𝗇𝖽𝖺𝗆𝖾𝗇𝗍𝖺𝗅.`,
+        owner: `✦ 𝖤𝗅 𝖼𝗈𝗆𝖺𝗇𝖽𝗈 *${command}* 𝖾𝗌𝗍𝖺́ 𝗋𝖾𝗌𝖾𝗋𝗏𝖺𝖽𝗈 𝗉𝖺𝗋𝖺 𝗅𝗈𝗌 𝖽𝖾𝗌𝖺𝗋𝗋𝗈𝗅𝗅𝖺𝖽𝗈𝗋𝖾𝗌 𝖽𝖾𝗅 𝖻𝗈𝗍.`,
+        mods: `✦ 𝖤𝗅 𝖼𝗈𝗆𝖺𝗇𝖽𝗈 *${command}* 𝗌𝗈𝗅𝗈 𝗉𝗎𝖾𝖽𝖾 𝗌𝖾𝗋 𝗎𝗌𝖺𝖽𝗈 𝗉𝗈𝗋 𝗆𝗈𝖽𝖾𝗋𝖺𝖽𝗈𝗋𝖾𝗌 𝖺𝗎𝗍𝗈𝗋𝗂𝗓𝖺𝖽𝗈𝗌.`,
+        premium: `✦ 𝖤𝗅 𝖼𝗈𝗆𝖺𝗇𝖽𝗈 *${command}* 𝖾𝗌𝗍𝖺́ 𝖽𝗂𝗌𝗉𝗈𝗇𝗂𝖻𝗅𝖾 𝗌𝗈𝗅𝗈 𝗉𝖺𝗋𝖺 𝗎𝗌𝗎𝖺𝗋𝗂𝗈𝗌 𝗉𝗋𝖾𝗆𝗂𝗎𝗆.`,
+        group: `✦ 𝖤𝗅 𝖼𝗈𝗆𝖺𝗇𝖽𝗈 *${command}* 𝗌𝗈𝗅𝗈 𝖿𝗎𝗇𝖼𝗂𝗈𝗇𝖺 𝖾𝗇 𝖼𝗁𝖺𝗍𝗌 𝖽𝖾 𝗀𝗋𝗎𝗉𝗈.`,
+        private: `✦ 𝖤𝗅 𝖼𝗈𝗆𝖺𝗇𝖽𝗈 *${command}* 𝖾𝗌𝗍𝖺́ 𝖽𝗂𝗌𝗉𝗈𝗇𝗂𝖻𝗅𝖾 𝗌𝗈𝗅𝗈 𝖾𝗇 𝗆𝗂 𝖼𝗁𝖺𝗍 𝗉𝗋𝗂𝗏𝖺𝖽𝗈.`,
+        admin: `✦ 𝖤𝗅 𝖼𝗈𝗆𝖺𝗇𝖽𝗈 *${command}* 𝗋𝖾𝗊𝗎𝗂𝖾𝗋𝖾 𝗌𝖾𝗋 𝖺𝖽𝗆𝗂𝗇𝗂𝗌𝗍𝗋𝖺𝖽𝗈𝗋 𝖽𝖾𝗅 𝗀𝗋𝗎𝗉𝗈.`,
+        botAdmin: `✦ 𝖯𝖺𝗋𝖺 𝖾𝗃𝖾𝖼𝗎𝗍𝖺𝗋 *${command}*, 𝗇𝖾𝖼𝖾𝗌𝗂𝗍𝗈 𝗌𝖾𝗋 𝖺𝖽𝗆𝗂𝗇 𝖾𝗇 𝖾𝗌𝗍𝖾 𝗀𝗋𝗎𝗉𝗈.`,
+        unreg: `✦ 𝖳𝗎 𝗎𝗌𝗎𝖺𝗋𝗂𝗈 𝗇𝗈 𝖾𝗌𝗍𝖺́ 𝗋𝖾𝗀𝗂𝗌𝗍𝗋𝖺𝖽𝗈.\n𝖴𝗌𝖺: *${usedPrefix}reg ${user2}.18*`,
+        restrict: `✦ 𝖤𝗌𝗍𝖺 𝖿𝗎𝗇𝖼𝗂𝗈́𝗇 𝖿𝗎𝖾 𝗋𝖾𝗌𝗍𝗋𝗂𝗇𝗀𝗂𝖽𝖺 𝗉𝗈𝗋 𝖾𝗅 𝖽𝖾𝗌𝖺𝗋𝗋𝗈𝗅𝗅𝖺𝖽𝗈𝗋.`
+     }[type]
     if (msg) return m.reply(msg).then(_ => m.react('✖️'))
 }
 
